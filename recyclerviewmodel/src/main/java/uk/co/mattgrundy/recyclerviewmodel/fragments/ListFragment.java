@@ -80,6 +80,10 @@ public abstract class ListFragment
         return new LinearLayoutManager(getActivity());
     }
 
+    protected BaseRecyclerAdapter getAdapter() {
+        return adapter;
+    }
+    
     protected void resetAdapter() {
         adapter = new BaseRecyclerAdapter(main_list, onListItemClickListener()) {
             @Override
