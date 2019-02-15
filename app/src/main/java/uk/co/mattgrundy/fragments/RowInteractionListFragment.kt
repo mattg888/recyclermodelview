@@ -67,5 +67,8 @@ class RowInteractionListFragment : ListInfiniteScrollRefreshFragment() {
         addData(data)
     }
 
+    override fun getViewTitle(): String {
+        return "Row Interaction List"
+    }
 
 }

@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import uk.co.mattgrundy.recyclerviewmodel.BaseRecyclerAdapter;
@@ -20,7 +19,7 @@ import java.util.List;
  */
 
 public abstract class ListFragment
-        extends Fragment {
+        extends BaseFragment {
 
     public boolean showLineDivider = false;
 
@@ -83,7 +82,7 @@ public abstract class ListFragment
     protected BaseRecyclerAdapter getAdapter() {
         return adapter;
     }
-    
+
     protected void resetAdapter() {
         adapter = new BaseRecyclerAdapter(main_list, onListItemClickListener()) {
             @Override

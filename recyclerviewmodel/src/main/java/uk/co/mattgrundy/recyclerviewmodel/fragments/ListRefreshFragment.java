@@ -1,23 +1,12 @@
 package uk.co.mattgrundy.recyclerviewmodel.fragments;
 
-import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
-import com.brandongogetap.stickyheaders.StickyLayoutManager;
-import com.brandongogetap.stickyheaders.exposed.StickyHeaderHandler;
-import uk.co.mattgrundy.recyclerviewmodel.BaseRecyclerAdapter;
 import uk.co.mattgrundy.recyclerviewmodel.R;
-import uk.co.mattgrundy.recyclerviewmodel.SimpleDividerItemDecoration;
-import uk.co.mattgrundy.recyclerviewmodel.models.ListItem;
-
-import java.util.List;
 
 /**
  * Created by Matthew Grundy on 09/10/2017.

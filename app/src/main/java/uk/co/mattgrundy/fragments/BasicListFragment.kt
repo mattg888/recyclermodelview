@@ -55,5 +55,8 @@ class BasicListFragment : ListInfiniteScrollRefreshFragment() {
         addData(data)
     }
 
+    override fun getViewTitle(): String {
+        return "Basic List"
+    }
 
 }
