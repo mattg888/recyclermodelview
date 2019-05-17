@@ -42,6 +42,8 @@ public abstract class ListItem extends BaseModel {
                         onRowInteractionListener.onRowItemClicked(self, clickedView.getId());
                     }
                 };
+            } else {
+                Timber.d("Trying to bind a null listener to a view");
             }
 
             view.setOnClickListener(onClickListener);
