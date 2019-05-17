@@ -24,7 +24,7 @@ public abstract class ListItem extends BaseModel {
     }
 
     public int getItemType() {
-        return getClass().hashCode();
+        return viewHolder.hashCode();
     }
 
     private transient OnRowInteractionListener onRowInteractionListener;
